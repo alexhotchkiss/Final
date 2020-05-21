@@ -428,9 +428,22 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #FFD683;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #FFD683;
+}
+footer section {
+  background-image: url("../img/footer/social.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
 /* =============
     Section 1
 ============= */

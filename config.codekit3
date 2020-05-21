@@ -19,6 +19,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/social.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/social.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/header/PB shape.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -76,6 +86,48 @@
 		"iS": 279846,
 		"oA": 1,
 		"oAP": "/deploy/img/section-1/twoguys.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/banner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-3/banner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-3/Ticket.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-3/Ticket.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-4/Bitmap.png": {
+		"ft": 32768,
+		"iS": 173579,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Bitmap.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/Bitmap2.png": {
+		"ft": 32768,
+		"iS": 162040,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Bitmap2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

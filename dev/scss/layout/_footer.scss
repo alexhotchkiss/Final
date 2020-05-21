@@ -2,5 +2,11 @@
     Footer
 ============= */
 footer{
-   
+    background-color: $yellow;
+   section{
+       background-image: url('../img/footer/social.svg');
+       background-repeat: no-repeat;
+       background-size: 100px;
+
+   }
 }
