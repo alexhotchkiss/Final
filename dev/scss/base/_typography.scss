@@ -18,3 +18,31 @@ p{
 #nav-container{
     
 }
+
+header{
+    
+    .outer{
+        display: grid;
+        grid-template-columns: 30% auto;
+        line-height: 19px;
+    }
+
+    .hr{
+        font-family: 'Gin', serif;
+        font-size: 18pt;
+        letter-spacing: 5.2px;
+ 
+    }
+
+    .hr2{
+        font-family: 'Gin', serif;
+        font-size: 14pt;
+
+    }
+
+    .hr3{
+        font-family: 'Gin', serif;
+        font-size: 18pt;
+
+    }
+}

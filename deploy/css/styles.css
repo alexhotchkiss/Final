@@ -401,6 +401,25 @@ p {
   margin: 0;
 }
 
+header .outer {
+  display: grid;
+  grid-template-columns: 30% auto;
+  line-height: 19px;
+}
+header .hr {
+  font-family: "Gin", serif;
+  font-size: 18pt;
+  letter-spacing: 5.2px;
+}
+header .hr2 {
+  font-family: "Gin", serif;
+  font-size: 14pt;
+}
+header .hr3 {
+  font-family: "Gin", serif;
+  font-size: 18pt;
+}
+
 /* =============
     Buttons
 ============= */
@@ -425,11 +444,95 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin: 0 30px 0 0;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #5895A6;
+  text-decoration: none;
+}
+#nav-container ul li a:hover,
+#nav-container ul li a:active {
+  color: #000;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: #FFD683;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header div {
+  display: grid;
+  grid-template-columns: 50px 50px auto 50px 50px;
+  grid-template-areas: "star, website, PB, burger" "nav nav nav nav";
+}
+header div .outer {
+  grid-area: website;
+}
+header div .outer h1 {
+  color: #c45A42;
+}
+header div img {
+  width: 30px;
+  grid-area: star;
+}
+header div section,
+header div nav {
+  padding: 20px;
+}
+header div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  header div #burger-container {
+    display: none;
+  }
+}
+header div #burger-container i {
+  cursor: pointer;
+}
+header div #nav-container {
+  background-color: #c45A42;
+  grid-area: nav;
+  display: none;
+}
+@media (min-width: 768px) {
+  header div #nav-container {
+    display: block;
+  }
+}
+header div section i {
+  color: #5895A6;
+}
+header div aside {
+  grid-area: PB;
+}
+header div aside img {
+  width: 75px;
 }
 
 /* =============
@@ -447,6 +550,10 @@ footer section {
 /* =============
     Section 1
 ============= */
+#section-1 #section-1-container img {
+  width: 320px;
+}
+
 /* =============
     Section 2
 ============= */

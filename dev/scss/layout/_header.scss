@@ -3,4 +3,98 @@
 ============= */
 header{
     background-color: $yellow;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    div{
+        display: grid;
+        grid-template-columns: 50px 50px auto 50px 50px;
+        grid-template-areas: "star, website, PB, burger"
+                                "nav nav nav nav";
+
+        .outer{
+            grid-area: website;
+            h1{
+                color: $red;
+
+            }
+            
+            
+        }
+
+        img{
+            width: 30px;
+            grid-area: star;
+        }
+
+        section,
+        nav{
+            padding: 20px;
+        }
+
+        #burger-container{
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+
+            @include md{
+                display: none;
+            }
+            i{
+                cursor: pointer;
+            }
+        }
+
+        #nav-container{
+            background-color: $red;
+            grid-area: nav;
+            display: none;
+
+            @include md{
+                display: block;
+            }
+        }
+
+        section{
+            i{
+                color: $blue;
+            }
+        }
+
+        aside{
+            grid-area: PB;
+            img{
+                width: 75px;
+                
+            }
+        }
+            
+
+    }
+
+    
+    // .outer{
+    //     width: 120px;
+    //     margin: 10px auto;
+    //     grid-area: website;
+    // }
+
+    // .hr{
+    //     font-family: 'Gin', serif;
+    //     font-size: 18pt;
+    //     letter-spacing: 3.9px;
+    // }
+
+    // .hr2{
+    //     font-family: 'Gin', serif;
+    //     font-size: 14pt;
+
+    // }
+
+    // .hr3{
+    //     font-family: 'Gin', serif;
+    //     font-size: 18pt;
+
+    // }
 }
