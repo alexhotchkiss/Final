@@ -30,7 +30,9 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
 }
 
 /**
@@ -402,9 +404,7 @@ p {
 }
 
 header .outer {
-  display: grid;
-  grid-template-columns: 30% auto;
-  line-height: 19px;
+  line-height: 14px;
 }
 header .hr {
   font-family: "Gin", serif;
@@ -418,6 +418,56 @@ header .hr2 {
 header .hr3 {
   font-family: "Gin", serif;
   font-size: 18pt;
+}
+
+#section-1 h1 {
+  display: grid;
+  grid-template-columns: 290% auto;
+  font-family: "Gotham", sans-serif;
+  font-style: book;
+  font-size: 20pt;
+  color: #fff;
+  letter-spacing: -0.7px;
+}
+#section-1 h2 {
+  display: grid;
+  grid-template-columns: 250% auto;
+  font-family: "Gotham", sans-serif;
+  font-size: 14pt;
+  color: #fff;
+}
+#section-1 h3 {
+  display: grid;
+  grid-template-columns: 80% auto;
+  font-family: "Gotham", sans-serif;
+  font-size: 14pt;
+  color: #fff;
+}
+#section-1 p {
+  font-family: "Gotham", sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  margin: 15px;
+}
+
+#section-2 {
+  font-size: 20px;
+}
+
+#section-3 {
+  font-size: 20px;
+}
+
+#section-4 {
+  font-size: 20px;
+}
+
+#section-5 {
+  font-size: 20px;
+}
+
+footer {
+  font-size: 20px;
 }
 
 /* =============
@@ -447,6 +497,7 @@ textarea {
 #nav-container ul {
   height: 100%;
   text-align: right;
+  padding-top: 20px;
 }
 @media (min-width: 992px) {
   #nav-container ul {
@@ -457,16 +508,9 @@ textarea {
 #nav-container ul li {
   margin-bottom: 20px;
 }
-@media (min-width: 992px) {
-  #nav-container ul li {
-    align-items: center;
-    display: flex;
-    margin: 0 30px 0 0;
-  }
-}
 #nav-container ul li a:link,
 #nav-container ul li a:visited {
-  color: #5895A6;
+  color: #fff;
   text-decoration: none;
 }
 #nav-container ul li a:hover,
@@ -481,21 +525,29 @@ header {
   background-color: #FFD683;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin: none;
+  width: 320px;
 }
 header div {
   display: grid;
-  grid-template-columns: 50px 50px auto 50px 50px;
-  grid-template-areas: "star, website, PB, burger" "nav nav nav nav";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "star website PB burger" ". . . ." ". . . .";
 }
 header div .outer {
+  display: grid;
+  grid-template-columns: 100% auto;
   grid-area: website;
 }
 header div .outer h1 {
   color: #c45A42;
 }
 header div img {
-  width: 30px;
+  width: 20px;
   grid-area: star;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 header div section,
 header div nav {
@@ -527,12 +579,14 @@ header div #nav-container {
 }
 header div section i {
   color: #5895A6;
+  font-size: 30px;
 }
 header div aside {
   grid-area: PB;
 }
 header div aside img {
-  width: 75px;
+  width: 95px;
+  padding-top: 0;
 }
 
 /* =============
@@ -550,19 +604,62 @@ footer section {
 /* =============
     Section 1
 ============= */
-#section-1 #section-1-container img {
+#section-1 {
+  margin: none;
+  background-color: #fdf3d4;
+  padding-bottom: 80px;
+}
+#section-1 #section-1-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Philly Philly Philly Philly" "established established twenty twenty" ". . . .";
+  background-image: url("../img/section-1/Beer.png");
+  background-size: cover;
+  width: 320px;
+  height: 337px;
+}
+#section-1 #section-1-container section #section-1-content h1 {
+  grid-area: Philly;
+}
+#section-1 #section-1-container section #section-1-content h2 {
+  grid-area: established;
+}
+#section-1 #section-1-container section #section-1-content h3 {
+  grid-area: twenty;
+}
+#section-1 aside img {
+  width: 320px;
+}
+#section-1 #pictures img {
   width: 320px;
 }
 
 /* =============
     Section 2
 ============= */
+#section-2 {
+  background-color: #fdf3d4;
+}
+
 /* =============
     section 3
 ============= */
+#section-3 {
+  background-color: #fdf3d4;
+}
+
 /* =============
     section 4
 ============= */
+#section-4 {
+  background-color: #fdf3d4;
+}
+
 /* =============
     section 2
 ============= */
+#section_2 {
+  background-color: #fdf3d4;
+}

@@ -2,11 +2,54 @@
     Section 1
 ============= */
 #section-1{
+    margin: none;
+    background-color: $light-yellow;
+    padding-bottom: 80px;
     
     #section-1-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "Philly Philly Philly Philly" "established established twenty twenty" ". . . .";
+
+        section{
+            #section-1-content{
+                
+                h1{
+                    grid-area: Philly;
+
+                  }
+                  h2{
+                    grid-area: established
+                  }
+                   h3{
+                    grid-area: twenty;
+                  }
+                  
+                
+            }
+        }
+        
+        background-image: url('../img/section-1/Beer.png');
+        background-size: cover;
+        width: 320px;
+        height: 337px;
+    }
+
+    aside{
+        img{
+            width: 320px;
+    
+        }
+    }
+
+    #pictures{
         img{
             width: 320px;
         }
     }
+
+    
 }
    

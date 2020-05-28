@@ -5,14 +5,30 @@ header{
     background-color: $yellow;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: none;
+    width: 320px;
+   
 
     div{
-        display: grid;
-        grid-template-columns: 50px 50px auto 50px 50px;
-        grid-template-areas: "star, website, PB, burger"
-                                "nav nav nav nav";
+        // display: grid;
+        // grid-template-columns: 50px 50px auto 50px 50px;
+        // grid-template-areas: "star, website, PB, burger"
+        //                         "nav nav nav nav";
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1px 1px;
+            grid-template-areas: "star website PB burger" ". . . ." ". . . .";
+        
+          
+        
+
 
         .outer{
+            display: grid;
+            grid-template-columns: 100% auto;
             grid-area: website;
             h1{
                 color: $red;
@@ -23,8 +39,10 @@ header{
         }
 
         img{
-            width: 30px;
+            width: 20px;
             grid-area: star;
+            padding-left: 10px;
+            padding-top: 20px;
         }
 
         section,
@@ -59,13 +77,15 @@ header{
         section{
             i{
                 color: $blue;
+                font-size: 30px;
             }
         }
 
         aside{
             grid-area: PB;
             img{
-                width: 75px;
+                width: 95px;
+                padding-top: 0;
                 
             }
         }
@@ -73,28 +93,4 @@ header{
 
     }
 
-    
-    // .outer{
-    //     width: 120px;
-    //     margin: 10px auto;
-    //     grid-area: website;
-    // }
-
-    // .hr{
-    //     font-family: 'Gin', serif;
-    //     font-size: 18pt;
-    //     letter-spacing: 3.9px;
-    // }
-
-    // .hr2{
-    //     font-family: 'Gin', serif;
-    //     font-size: 14pt;
-
-    // }
-
-    // .hr3{
-    //     font-family: 'Gin', serif;
-    //     font-size: 18pt;
-
-    // }
 }

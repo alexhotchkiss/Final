@@ -29,11 +29,11 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/header/PB shape.svg": {
+	"/deploy/img/header/PBshape.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/deploy/img/header/PB shape.svg",
+		"oAP": "/deploy/img/header/PBshape.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -49,16 +49,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/section-1/Beer frame.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/section-1/Beer frame.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/deploy/img/section-1/Beer.png": {
 		"ft": 32768,
 		"iS": 1025200,
@@ -69,6 +59,16 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/deploy/img/section-1/Beerframe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-1/Beerframe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/deploy/img/section-1/Crowd.png": {
 		"ft": 32768,
@@ -221,14 +221,6 @@
 		"oAP": "/dev/header.html",
 		"oF": 0
 		},
-	"/dev/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
-		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -236,6 +228,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -430,7 +433,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section_2.scss": {
+	"/dev/scss/sections/_section-5.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -438,7 +441,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_section_2.css",
+		"oAP": "/dev/scss/sections/_section-5.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -488,12 +491,12 @@
 		"oAP": "/dev/section-4.html",
 		"oF": 0
 		},
-	"/dev/section_2.kit": {
+	"/dev/section-5.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/section_2.html",
+		"oAP": "/dev/section-5.html",
 		"oF": 0
 		},
 	"/README.md": {

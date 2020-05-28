@@ -22,9 +22,7 @@ p{
 header{
     
     .outer{
-        display: grid;
-        grid-template-columns: 30% auto;
-        line-height: 19px;
+        line-height: 14px;
     }
 
     .hr{
@@ -45,4 +43,58 @@ header{
         font-size: 18pt;
 
     }
+}
+
+#section-1{
+    h1{
+        display: grid;
+        grid-template-columns: 290% auto;
+        font-family: 'Gotham', sans-serif;
+        font-style: book;
+        font-size: 20pt;
+        color: $white;
+        letter-spacing: -.7px;
+    }
+    h2{
+        display: grid;
+        grid-template-columns: 250% auto;
+        font-family: 'Gotham', sans-serif;
+        font-size: 14pt;
+        color: $white;
+
+    }
+    h3{
+        display: grid;
+        grid-template-columns: 80% auto;
+        font-family: 'Gotham', sans-serif;
+        font-size: 14pt;
+        color: $white;
+
+    }
+    p{
+        font-family: 'Gotham', sans-serif;
+        font-size: 12pt;
+        text-align: center;
+        margin: 15px;
+    }
+}
+
+#section-2{
+    font-size: 20px;
+}
+
+#section-3{
+    font-size: 20px;
+}
+
+#section-4{
+    font-size: 20px;
+}
+
+#section-5{
+    font-size: 20px;
+}
+
+footer{
+    font-size: 20px;
 }
