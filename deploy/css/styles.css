@@ -721,8 +721,10 @@ footer {
   grid-template-rows: 1fr;
   padding-top: 10px;
   padding-left: 0px;
+  padding-right: 10px;
 }
 footer section h1 {
+  padding-top: 5px;
   grid-area: 1/1/2/2;
   display: grid;
   grid-template-columns: 250%;
@@ -808,7 +810,7 @@ footer .image {
 #section-2 #section-2-container #section-2-content img {
   width: 150px;
   padding-left: 80px;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 10px;
 }
 #section-2 #section-2-container #section-2-content .box1 {
@@ -858,7 +860,7 @@ footer .image {
 }
 #section-4 #section-4-container section hr {
   border: none;
-  height: 2px;
+  height: 3px;
   background-color: #c45A42;
   margin: 0;
 }
@@ -951,6 +953,10 @@ footer .image {
 ============= */
 #section-3 {
   background-color: #fdf3d4;
+}
+#section-3 #section-3-container #section-3-content h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #section-3 #section-3-container #section-3-content .box1 {
   background-color: #c45A42;
