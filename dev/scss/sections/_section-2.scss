@@ -4,4 +4,40 @@
 
 #section-2{
    background-color: $light-yellow;
+
+   #section-2-container{
+       padding-bottom: 20px;
+
+        #section-2-content{
+            img{
+                width: 150px;
+                padding-left: 80px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .box1{
+                background-color: $red;
+            }
+            .box2{
+                background-color: $red;
+            }
+            .box3{
+                background-color: $red;
+            }
+            .box4{
+                background-color: $red;
+            }
+            
+
+
+        }
+        
+   }
+   hr{
+       border: none;
+       height: 5px;
+       background-color: $blue;
+       margin: 15px;
+    
+   }
 }

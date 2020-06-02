@@ -4,24 +4,30 @@
 #section-1{
     margin: none;
     background-color: $light-yellow;
-    padding-bottom: 80px;
+    padding-bottom: 45px;
+    width: 100%;
+    padding-top: 20px;
     
     #section-1-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1px 1px;
         grid-template-areas: "Philly Philly Philly Philly" "established established twenty twenty" ". . . .";
 
         section{
             #section-1-content{
+                padding-top: 250px;
+                margin: 5px;
                 
                 h1{
                     grid-area: Philly;
 
                   }
                   h2{
-                    grid-area: established
+                    grid-area: established;
+                    padding-top: 15px;
+                    
                   }
                    h3{
                     grid-area: twenty;
@@ -35,18 +41,39 @@
         background-size: cover;
         width: 320px;
         height: 337px;
+        @include md{
+            width: 100%;
+            height: 513px;
+        }
     }
 
-    aside{
+    #section-1-container2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: ". section-1 .";
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+
         img{
-            width: 320px;
-    
+            padding-top: 18px;
+            padding-left: 10px;
+            grid-area: section-1;
+            
+        }
+
+
+        p{
+            padding-top: 20px;
+            grid-area: section-1;
+
         }
     }
 
     #pictures{
         img{
             width: 320px;
+            margin-top: 25px;   
         }
     }
 

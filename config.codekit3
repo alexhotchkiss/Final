@@ -81,6 +81,27 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/section-1/Frame.png": {
+		"ft": 32768,
+		"iS": 2405,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/Frame.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-1/Frame.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-1/Frame.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/section-1/twoguys.png": {
 		"ft": 32768,
 		"iS": 279846,
@@ -92,86 +113,130 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-3/banner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/section-3/banner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/section-3/Ticket.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/section-3/Ticket.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/section-4/Bitmap.png": {
+	"/deploy/img/section-2/CapeMay.png": {
 		"ft": 32768,
-		"iS": 173579,
+		"iS": 109511,
 		"oA": 0,
-		"oAP": "/deploy/img/section-4/Bitmap.png",
+		"oAP": "/deploy/img/section-2/CapeMay.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-4/Bitmap2.png": {
+	"/deploy/img/section-2/FlyingFish.png": {
 		"ft": 32768,
-		"iS": 162040,
+		"iS": 159095,
 		"oA": 0,
-		"oAP": "/deploy/img/section-4/Bitmap2.png",
+		"oAP": "/deploy/img/section-2/FlyingFish.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section_2/Bitmap.png": {
+	"/deploy/img/section-2/founders.png": {
+		"ft": 32768,
+		"iS": 159484,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/founders.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-2/RiverHorse.png": {
+		"ft": 32768,
+		"iS": 214605,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/RiverHorse.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/Babyblues.png": {
 		"ft": 32768,
 		"iS": 112489,
 		"oA": 0,
-		"oAP": "/deploy/img/section_2/Bitmap.png",
+		"oAP": "/deploy/img/section-3/Babyblues.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section_2/Chanks_Logo-Final_Grab-N-Go_RGB_Color-Dark-BG_30068C2A-035F-46BA-AB96E01C2E8A24C7_e4176a95-bf3f-4e4a-8a610278a0bf5658.png": {
+	"/deploy/img/section-3/Chanks.png": {
 		"ft": 32768,
 		"iS": 56896,
 		"oA": 0,
-		"oAP": "/deploy/img/section_2/Chanks_Logo-Final_Grab-N-Go_RGB_Color-Dark-BG_30068C2A-035F-46BA-AB96E01C2E8A24C7_e4176a95-bf3f-4e4a-8a610278a0bf5658.png",
+		"oAP": "/deploy/img/section-3/Chanks.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section_2/index.png": {
-		"ft": 32768,
-		"iS": 112663,
-		"oA": 0,
-		"oAP": "/deploy/img/section_2/index.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/section_2/mon+n+rach.png": {
+	"/deploy/img/section-3/Stuff'd.png": {
 		"ft": 32768,
 		"iS": 193026,
 		"oA": 0,
-		"oAP": "/deploy/img/section_2/mon+n+rach.png",
+		"oAP": "/deploy/img/section-3/Stuff'd.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/waffle.png": {
+		"ft": 32768,
+		"iS": 112663,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/waffle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/banner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-4/banner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-4/Ticket.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-4/Ticket.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-5/Axe.png": {
+		"ft": 32768,
+		"iS": 173579,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/Axe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-5/Jenga.png": {
+		"ft": 32768,
+		"iS": 162040,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/Jenga.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

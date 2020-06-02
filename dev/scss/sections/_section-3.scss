@@ -2,6 +2,60 @@
     section 2
 ============= */
 
-#section_2{
+#section-3{
     background-color: $light-yellow;
+
+    #section-3-container{
+        
+
+        #section-3-content{
+            
+            .box1{
+                background-color: $red;
+                padding-bottom: 0px;
+                margin-bottom: 20px;
+                padding-top: 15px;
+                img{
+                    display: grid;
+                    width: 0px;
+                }
+            }
+            .box2{
+                background-color: $red;
+                margin-bottom: 20px;
+                padding-top: 15px;
+                padding-bottom: 0px;
+                img{
+                    width: 0px;
+                }
+                
+            }
+            .box3{
+                background-color: $red;
+                margin-bottom: 20px;
+                padding-top: 15px;
+                img{
+                    width: 0px;
+                }
+                
+            }
+            .box4{
+                background-color: $red;
+                margin-bottom: 20px;
+                padding-top: 15px;
+                img{
+                    width: 0px;
+                }
+                
+            }
+
+        }
+        hr{
+            border: none;
+            height: 5px;
+            background-color: $blue;
+            margin: 15px;
+         
+        }   
+    }
 }

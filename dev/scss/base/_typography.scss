@@ -2,9 +2,8 @@
     Typography
 ============= */
 body{
-   
+    display: grid;
 }
-
 h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
@@ -46,29 +45,33 @@ header{
 }
 
 #section-1{
+    
     h1{
         display: grid;
         grid-template-columns: 290% auto;
         font-family: 'Gotham', sans-serif;
         font-style: book;
-        font-size: 20pt;
+        font-size: 19pt;
         color: $white;
         letter-spacing: -.7px;
     }
     h2{
         display: grid;
-        grid-template-columns: 250% auto;
+        grid-template-columns: 300% auto;
         font-family: 'Gotham', sans-serif;
         font-size: 14pt;
         color: $white;
 
     }
     h3{
-        display: grid;
-        grid-template-columns: 80% auto;
         font-family: 'Gotham', sans-serif;
         font-size: 14pt;
         color: $white;
+        display: none;
+        @include md{
+            display: grid;
+        }
+
 
     }
     p{
@@ -77,24 +80,150 @@ header{
         text-align: center;
         margin: 15px;
     }
+    #section-1-container2{
+        p{
+            font-family: 'Gotham', sans-serif;
+            font-size: 12px;
+        }
+    }
 }
 
 #section-2{
     font-size: 20px;
+
+    h1{
+        font-family: 'Gotham', sans-serif;
+        padding-bottom: 35px;
+        color: $red;
+    }
+    p{
+        font-family: 'Gotham', sans-serif;
+        text-align: center;
+        font-size: 12pt;
+        color: $white;
+        padding: 30px;
+    }
+
 }
 
 #section-3{
     font-size: 20px;
+    
+    h1{
+        font-family: 'Gotham', sans-serif;
+        color: $red;
+        font-size: 32pt;
+        padding-left: 7px;
+    }
+    h2{
+        font-family: 'Gotham', sans-serif;
+        font-size: 24pt;
+        color: $yellow;
+    }
+    p{
+        font-family: 'Gotham', sans-serif;
+        font-size: 12pt;
+        color: $white;
+        margin: 25px;
+    }
+    .box1{
+        text-align: center;
+    }
+    .box2{
+        text-align: center;
+    }
+    .box3{
+        text-align: center;
+    }
+    .box4{
+        text-align: center;
+    }
 }
 
 #section-4{
     font-size: 20px;
+
+    h1{
+        font-family: 'Gotham', sans-serif;
+        color: $red;
+        font-size: 18pt;
+        padding-left: 7px;
+        text-align: center;
+
+    }
+    #section-4-content2{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        h1{
+            color: $black;
+            font-family: 'Gotham', sans-serif;
+            font-size: 13pt;
+            text-align: center;
+        }
+        h2{
+            color: $black;
+            font-family: 'Gotham', sans-serif;
+            font-size: 13pt;
+            text-align: center;
+        }
+    }
+    #section-4-content3{
+        h1{
+            color: $black;
+            font-family: 'Gotham', sans-serif;
+            font-size: 30pt;
+            text-align: left;
+        }
+        p{
+            color: $black;
+            font-family: 'Gotham', sans-serif;
+            font-size: 12pt;
+            text-align: left;
+        }
+    }
+        
 }
 
 #section-5{
     font-size: 20px;
+
+    h1{
+        font-family: 'Gotham', sans-serif;
+        color: $red;
+        font-size: 32pt;
+        padding-left: 7px;
+    }
+    h2{
+        font-family: 'Gotham', sans-serif;
+        font-style: thin;
+        color: $red;
+        font-size: 13pt;
+    }
+    h3{
+        font-family: 'Gotham', sans-serif;
+        color: $red;
+        font-size: 13pt;
+    }
+    h4{
+        font-family: 'Gotham', sans-serif;
+        color: $black;
+        font-size: 12pt;
+    }
+    h5{
+        font-family: 'Gotham', sans-serif;
+        color: $black;
+        font-size: 12pt;
+    }
 }
 
 footer{
     font-size: 20px;
+
+    h1{
+        font-family: 'Gotham', sans-serif;
+        color: $red;
+        font-size: 12pt;
+        padding-left: 7px;
+        text-align: left;
+    }
 }
