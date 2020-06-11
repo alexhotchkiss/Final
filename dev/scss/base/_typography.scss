@@ -15,32 +15,58 @@ p{
 }
 
 #nav-container{
-    
+    a{
+        font-family: 'Gotham', sans-serif;
+        text-align: center;
+        font-size: 12pt;
+        color: $white;
+        padding: 30px;
+    } 
+    li{
+        color: $white;
+    }
 }
 
 header{
     
     .outer{
         line-height: 14px;
+        @include lg{
+            line-height: 25px;
+        }
     }
 
     .hr{
         font-family: 'Gin', serif;
         font-size: 18pt;
         letter-spacing: 5.2px;
- 
+        @include sm{
+            font-size: 32pt;
+        }
+        @include lg{
+            font-size: 48pt;
+            letter-spacing: 14px;
+        }
     }
-
     .hr2{
         font-family: 'Gin', serif;
         font-size: 14pt;
-
+        @include sm{
+            font-size: 22pt;
+        }
+        @include lg{
+            font-size: 37pt;
+        }
     }
-
     .hr3{
         font-family: 'Gin', serif;
         font-size: 18pt;
-
+        @include sm{
+            font-size: 29pt;
+        }
+        @include lg{
+            font-size: 48pt;
+        }
     }
 }
 
@@ -54,6 +80,14 @@ header{
         font-size: 19pt;
         color: $white;
         letter-spacing: -.7px;
+        @include sm{
+            display: grid;
+            grid-template-columns: 380% auto;
+            font-size: 35pt;
+        }
+        @include lg{
+            font-size: 65pt;
+        }
     }
     h2{
         display: grid;
@@ -61,6 +95,9 @@ header{
         font-family: 'Gotham', sans-serif;
         font-size: 14pt;
         color: $white;
+        @include sm{
+            font-size: 30pt;
+        }
 
     }
     h3{
@@ -68,8 +105,10 @@ header{
         font-size: 14pt;
         color: $white;
         display: none;
-        @include md{
+        @include sm{
             display: grid;
+        }
+        @include lg{
         }
 
 
@@ -84,17 +123,31 @@ header{
         p{
             font-family: 'Gotham', sans-serif;
             font-size: 12px;
+            @include sm{
+                font-size: 14pt;
+            }
+            @include lg{
+                font-size: 22pt;
+            }
         }
     }
 }
 
 #section-2{
-    font-size: 20px;
+    font-size: 20pt;
 
     h1{
         font-family: 'Gotham', sans-serif;
         padding-bottom: 35px;
         color: $red;
+        font-size: 30pt;
+        @include sm{
+            font-size: 50pt;
+            padding-bottom: 20px;
+        }
+        @include lg{
+            font-size: 100pt;
+        }
     }
     p{
         font-family: 'Gotham', sans-serif;
@@ -102,8 +155,13 @@ header{
         font-size: 12pt;
         color: $white;
         padding: 30px;
+        @include sm{
+            font-size: 18pt;
+        }
+        @include lg{
+            font-size: 28pt;
+        }
     }
-
 }
 
 #section-3{
@@ -112,31 +170,87 @@ header{
     h1{
         font-family: 'Gotham', sans-serif;
         color: $red;
-        font-size: 32pt;
+        font-size: 28pt;
         padding-left: 7px;
+        @include sm{
+            font-size: 50pt;
+        }
+        @include lg{
+            font-size: 80pt;
+        }
     }
     h2{
         font-family: 'Gotham', sans-serif;
         font-size: 24pt;
         color: $yellow;
+        @include sm{
+            font-size: 40pt;
+        }
+        @include lg{
+            font-size: 60pt;
+        }
     }
     p{
         font-family: 'Gotham', sans-serif;
         font-size: 12pt;
         color: $white;
         margin: 25px;
+        @include lg{
+            font-size: 24pt;
+            margin: 0;
+        }
     }
     .box1{
         text-align: center;
+        h2{
+            @include sm{
+                text-align: right;
+            }
+        }
+        p{
+            @include sm{
+                text-align: right;
+            }
+        }
     }
     .box2{
         text-align: center;
+        h2{
+            @include sm{
+                text-align: left;
+            }
+        }
+        p{
+            @include sm{
+                text-align: left
+            }
+        }
     }
     .box3{
         text-align: center;
+        h2{
+            @include sm{
+                text-align: right;
+            }
+        }
+        p{
+            @include sm{
+                text-align: right;
+            }
+        }
     }
     .box4{
         text-align: center;
+        h2{
+            @include sm{
+                text-align: left;
+            }
+        }
+        p{
+            @include sm{
+                text-align: left;
+            }
+        }
     }
 }
 
@@ -144,11 +258,17 @@ header{
     font-size: 20px;
 
     h1{
-        font-family: 'Gotham', sans-serif;
+        font-family: 'Times', sans-serif;
         color: $red;
         font-size: 18pt;
         padding-left: 7px;
         text-align: center;
+        @include sm{
+            font-size: 34pt;
+        }
+        @include lg{
+            font-size: 70pt;
+        }
 
     }
     #section-4-content2{
@@ -156,29 +276,53 @@ header{
         padding-bottom: 20px;
         h1{
             color: $black;
-            font-family: 'Gotham', sans-serif;
+            font-family: 'Times', sans-serif;
             font-size: 13pt;
             text-align: center;
+            @include sm{
+                font-size: 25pt;
+            }
+            @include lg{
+                font-size: 34pt;
+            }
         }
         h2{
             color: $black;
-            font-family: 'Gotham', sans-serif;
+            font-family: 'Times', sans-serif;
             font-size: 13pt;
             text-align: center;
+            @include sm{
+                font-size: 25pt;
+            }
+            @include lg{
+                font-size: 34pt;
+            }
         }
     }
     #section-4-content3{
         h1{
             color: $black;
-            font-family: 'Gotham', sans-serif;
+            font-family: 'Times', sans-serif;
             font-size: 30pt;
             text-align: left;
+            @include sm{
+                font-size: 40pt;
+            }
+            @include lg{
+                font-size: 52pt;
+            }
         }
         p{
             color: $black;
-            font-family: 'Gotham', sans-serif;
+            font-family: 'Times', sans-serif;
             font-size: 12pt;
             text-align: left;
+            @include sm{
+                font-size: 18pt;
+            }
+            @include lg{
+                font-size: 30pt;
+            }
         }
     }
         
@@ -192,27 +336,59 @@ header{
         color: $red;
         font-size: 32pt;
         padding-left: 7px;
+        @include sm{
+            font-size: 60pt;
+            padding-left: 0;
+        }
+        @include lg{
+            font-size: 80pt;
+        }
     }
     h2{
         font-family: 'Gotham', sans-serif;
-        font-style: thin;
         color: $red;
         font-size: 13pt;
+        @include sm{
+            font-size: 20pt;
+        }
+        @include lg{
+            font-size: 34pt;
+        }
     }
     h3{
         font-family: 'Gotham', sans-serif;
         color: $red;
         font-size: 13pt;
+        @include sm{
+            font-size: 20pt;
+        }
+        @include lg{
+            font-size: 34pt;
+        }
     }
     h4{
         font-family: 'Gotham', sans-serif;
+        font-weight: normal;
         color: $black;
         font-size: 12pt;
+        @include sm{
+            font-size: 18pt;
+        }
+        @include lg{
+            font-size: 24pt;
+        }
     }
     h5{
         font-family: 'Gotham', sans-serif;
+        font-weight: normal;
         color: $black;
         font-size: 12pt;
+        @include sm{
+            font-size: 18pt;
+        }
+        @include lg{
+            font-size: 24pt;
+        }
     }
 }
 
@@ -220,10 +396,28 @@ footer{
     font-size: 20px;
 
     h1{
-        font-family: 'Gotham', sans-serif;
+        font-family: 'Times', sans-serif;
         color: $red;
         font-size: 12pt;
         padding-left: 7px;
         text-align: left;
+        @include sm{
+            font-size: 18pt;
+        }
+        @include lg{
+            font-size: 26pt;
+        }
+    }
+}
+#section-6{
+    font-family: 'Gotham', sans-serif;
+    font-size: 0pt;
+    a{
+        font-family: 'Gotham', sans-serif;
+        font-size: 19pt;
+        color: $red;
+        @include lg{
+            font-size: 22pt;
+        }
     }
 }

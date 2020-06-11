@@ -4,44 +4,60 @@
 header{
     background-color: $yellow;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     margin: none;
+    @include sm{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    @include lg{
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
    
-
     div{
-        // display: grid;
-        // grid-template-columns: 50px 50px auto 50px 50px;
-        // grid-template-areas: "star, website, PB, burger"
-        //                         "nav nav nav nav";
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        @include sm{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 1px 1px;
-            grid-template-areas: "star website PB burger" ". . . ." ". . . .";
-        
-          
-        
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+        @include md{
 
-
+        }
+        
         .outer{
             display: grid;
             grid-template-columns: 100% auto;
-            grid-area: website;
-            h1{
-                color: $red;
-
+            grid-area: 1/2/2/3;
+            @include sm{
+                display: grid;
+                grid-template-columns: 100% auto;
+                padding-left: 80px;
             }
-            
-            
+            @include md{
+                
+            }
+            h1{
+                color: $red; 
+            }
         }
 
         img{
             width: 20px;
-            grid-area: star;
+            grid-area: 1/1/2/2;
             padding-left: 10px;
             padding-top: 20px;
+            @include sm{
+                width: 40px;
+                padding-left: 80px;
+            }
+            @include lg{
+                width: 60px;
+                padding-top: 50px;
+            }
         }
 
         section,
@@ -52,44 +68,67 @@ header{
         #burger-container{
             align-items: center;
             display: flex;
-            grid-area: burger;
+            grid-area: 1/4/2/5;
             justify-content: flex-end;
 
-            @include md{
+            @include sm{
                 display: none;
             }
             i{
                 cursor: pointer;
+                color: $blue;
             }
         }
 
         #nav-container{
             background-color: $red;
-            grid-area: nav;
+            grid-area: 2/1/3/5;
             display: none;
 
             @include md{
-                display: block;
+                display: none;
             }
         }
 
         section{
             i{
-                color: $blue;
+                color: $white;
                 font-size: 30px;
             }
         }
 
-        aside{
-            grid-area: PB;
+        #PB{
+            grid-area: 1/3/2/4;
             img{
                 width: 95px;
                 padding-top: 0;
-                
+                @include sm{
+                    width: 135px;
+                    padding-bottom: 5px;
+                }
+                @include lg{
+                    width: 230px;
+                    padding-bottom: 10px;
+                    padding-right: 90px;
+                }
             }
         }
-            
 
-    }
+        #star{
+            img{
+                display: none;
+                @include sm{
+                    display: grid;
+                    width: 40px;
+                    grid-area: 1/4/2/5;
+                    padding-right: 100px;
+                }
+                @include lg{
+                    width: 60px;
+                    padding-top: 50px;
+                }
 
+            }
+        }
+   }
 }

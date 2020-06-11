@@ -3,9 +3,8 @@
 ============= */
 #nav-container{
     ul{
-        height: 100%;
-        text-align: right;
-        padding-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
         @include lg{
             display: flex;
@@ -13,10 +12,10 @@
         }
 
         li{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: right;
             
-           
-
             a:link,
             a:visited{
                 color: $white;

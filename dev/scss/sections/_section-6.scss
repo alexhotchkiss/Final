@@ -1,0 +1,85 @@
+/* =============
+    Section 6
+============= */
+#section-6{
+    background-color: $light-yellow;
+    padding-top: 20px;
+    @include lg{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #section-6-container{
+
+        #section-6-content{
+            #box{
+                display: none;
+                @include sm{
+                    display: grid;
+                    background-color: $red;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    grid-template-columns: 155px 200px 110px 150px 155px;
+                    grid-template-rows: 1fr;
+                    background-color: $red;
+                }
+                @include lg{
+                    grid-template-columns: 230px 230px 360px 230px 230px; 
+                }
+
+                .box1{
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    height: 50px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    grid-area: 1/1/2/2;
+                    padding-left: 18px;
+                    padding-top: 15px;
+                    @include lg{
+                        padding-left: 50px;
+                    }
+                }
+                .box2{
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    height: 50px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding-right: 20px;
+                    grid-area: 1/2/2/3;
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    @include lg{
+                        padding-left: 30px;
+                    }
+                }
+                .box3{
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    height: 50px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    grid-area: 1/4/2/5;
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    @include lg{
+                        padding-left: 50px;
+                    }
+                }
+                .box4{
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    height: 50px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    grid-area: 1/5/2/6;
+                    padding-left: 2px;
+                    padding-top: 15px;
+                    @include lg{
+                        padding-left: 30px;
+                    }
+                }                               
+            }
+        }
+    }
+}

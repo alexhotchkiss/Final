@@ -16,25 +16,64 @@
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-areas: ". section-1 .";
+                @include lg{
+                    padding-top: 60px;
+                }
     
                 img{
                     grid-area: section-1;
+                    @include sm{
+                        width: 550px;
+                        padding-left: 50px;
+                    }
+                    @include lg{
+                        width: 1000px;
+                        padding-left: 75px;
+                    }
                 }
                 h1{
                     grid-area: section-1;
                     padding-right: 12px;
                     padding-top: 5px;
+                    @include lg{
+                        padding-left: 20px;
+                    }
                 }
             }
             #section-4-content2{
                 display: grid;
                 grid-template-columns: 150px 150px;
+                @include sm{
+                    display: grid;
+                    grid-template-columns: 400px 350px;
+                    padding-left: 20px;
+                    padding-top: 25px;
+                }
+                @include lg{
+                    grid-template-columns: 680px 480px;
+                }
+                h2{
+                    @include lg{
+                        padding-left: 100px;
+                    }
+                }
             }
             hr{
                 border: none;
                 height: 3px;
                 background-color: $red;
                 margin: 0;
+                @include sm{
+                    margin-right: 45px;
+                    margin-left: 35px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    height: 5px;
+                }
+                @include lg{
+                    margin-left: 100px;
+                    margin-right: 90px;
+                }
             }
             #section-4-content3{
                 padding-top: 20px;
@@ -45,28 +84,101 @@
                 h1{
                     padding-bottom: 0;
                     grid-area: 1/1/2/2;
+                    @include sm{
+                        padding-left: 35px;
+                    }
+                    @include lg{
+                        padding-left: 140px;
+                    }
                 }
                 p{
                     display: grid;
                     grid-template-columns: 105% auto;
                     padding-left: 7px;
                     grid-area: 2/1/3/2;
+                    @include sm{
+                        grid-template-columns: 70% auto;
+                        padding-left: 35px;
+                    }
+                    @include lg{
+                        grid-template-columns: 68%;
+                        padding-left: 140px;
+                    }
                 }
                 img{
-                    grid-area: 1/2/2/3;
+                    grid-area: 1/2/3/3;
+                    @include sm{
+                        width: 250px;
+                        padding-left: 90px;
+                    }
+                    @include lg{
+                        width: 400px;
+                    }
                 }
 
             }
         }
+    }
+    #hr-tags3{
+        @include sm{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            padding-bottom: 30px;
+        }
+        @include lg{
+            padding-top: 30px;
+        }
 
-        aside{
-            hr{
-                border: none;
+        hr.blueline1{
+            border: none;
+            height: 3px;
+            background-color: $blue;
+            margin: 15px;
+            @include sm{
+                margin: 0;
                 height: 5px;
-                background-color: $blue;
-                margin: 15px;
+                margin-left: 30px;
+                margin-top: 20px;
+                grid-area: 1/1/2/2;
+                padding-top: 2px;
             }
-            
+            @include lg{
+                padding-right: 40px;
+                height: 6px;
+            }
+        }
+        hr.blueline2{
+            display: none;
+            border: none;
+            height: 3px;
+            background-color: $blue;
+            margin: 15px;
+            @include sm{
+                display: grid;
+                margin: 0;
+                height: 5px;
+                margin-top: 20px;
+                margin-right: 50px;
+                grid-area: 1/3/2/4;
+                padding-top: 2px;
+            }
+            @include lg{
+                height: 6px;
+            }
+        }
+        img{
+            display: none;
+            @include sm{
+                display: grid;
+                grid-area: 1/2/2/3;
+                height: 40px;
+                padding-left: 100px;
+            }
+            @include lg{
+                height: 50px;
+                padding-left: 180px;
+            }
         }
     }
 }
