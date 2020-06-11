@@ -1,2 +1,2 @@
-# Final
+# HotchkissA-Final
 final project
